@@ -48,7 +48,6 @@ const routes: Routes = [
   {
     path: '',
     redirectTo: '/tabs/(films:films)',
-    redirectTo: '/tabs/(people:people)',
     pathMatch: 'full'
   },
 ];

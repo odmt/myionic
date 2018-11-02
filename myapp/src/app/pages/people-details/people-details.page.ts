@@ -8,15 +8,15 @@ import { HttpClient } from '@angular/common/http';
 })
 export class PeopleDetailsPage implements OnInit {
 
-	film: any;
+	people: any;
 
   constructor(private activatedRoute: ActivatedRoute, private http: HttpClient) { }
 
   ngOnInit() {
      let id = this.activatedRoute.snapshot.paramMap.get('id');
     this.http.get(`https://swapi.co/api/people/${id}`).subscribe(res => {
-      this.film = res;
-    });
+      this.people = res;
+    })
   }  
 
- }
+}
